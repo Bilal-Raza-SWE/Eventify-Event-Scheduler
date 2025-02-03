@@ -1,0 +1,179 @@
+.create-event-modal {
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .create-event-modal h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .image-upload-section {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .image-upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 2px dashed #e1e1e1;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .image-upload-label:hover {
+    border-color: #007bff;
+    background: #f8f9fa;
+  }
+  
+  .image-upload-label svg {
+    font-size: 2rem;
+    color: #666;
+  }
+  
+  .image-preview {
+    position: relative;
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .image-preview img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  .remove-image {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .remove-image:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .form-group.full-width {
+    grid-column: 1 / -1;
+  }
+  
+  .location-section {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .venue-input,
+  .address-input {
+    width: 100%;
+  }
+  
+  .visibility-toggle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-label {
+    margin-left: 1rem;
+    color: #666;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e1e1e1;
+  }
+  
+  .btn-create,
+  .btn-cancel {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-create {
+    background: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .btn-create:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .btn-cancel {
+    background: #f8f9fa;
+    color: #666;
+    border: none;
+  }
+  
+  .btn-cancel:hover {
+    background: #e9ecef;
+  }
+  
+  @media (max-width: 768px) {
+    .create-event-modal {
+      padding: 1rem;
+    }
+  
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .form-actions {
+      flex-direction: column;
+    }
+  
+    .btn-create,
+    .btn-cancel {
+      width: 100%;
+    }
+  }

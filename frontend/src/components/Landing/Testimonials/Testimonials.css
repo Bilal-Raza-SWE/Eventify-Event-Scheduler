@@ -1,0 +1,138 @@
+.testimonials {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  
+  .testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+  }
+  
+  .testimonials-carousel {
+    position: relative;
+    height: 400px;
+    margin: 2rem 0;
+  }
+  
+  .testimonial-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.5s ease;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-card.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .quote-icon {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-quote {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+  
+  .rating {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .star {
+    margin: 0 2px;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+  }
+  
+  .author-info {
+    text-align: left;
+  }
+  
+  .author-info h4 {
+    color: #333;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .author-info p {
+    color: #666;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .author-info .company {
+    color: #007bff;
+    font-weight: 500;
+  }
+  
+  .testimonial-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dot.active {
+    background: #007bff;
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 768px) {
+    .testimonials {
+      padding: 3rem 1rem;
+    }
+  
+    .testimonial-card {
+      padding: 1.5rem;
+    }
+  
+    .testimonial-quote {
+      font-size: 1rem;
+    }
+  }

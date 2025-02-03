@@ -1,0 +1,89 @@
+.cta-section {
+    background: linear-gradient(135deg, #0061f2 0%, #00a6fb 100%);
+    color: white;
+    padding: 5rem 2rem;
+  }
+  
+  .cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: white;
+    color: #0061f2;
+  }
+  
+  .btn-primary:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .trust-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  
+  .trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .trust-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .trust-text {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }

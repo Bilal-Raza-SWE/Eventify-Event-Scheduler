@@ -1,0 +1,156 @@
+.event-management {
+    padding: 2rem;
+    background: #f5f7fa;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .page-header h2 {
+    font-size: 1.8rem;
+    color: #333;
+    background: linear-gradient(45deg, #007bff, #00bcd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .events-table-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+  }
+  
+  .events-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .events-table th {
+    background: #f8f9fa;
+    padding: 1rem;
+    text-align: left;
+    color: #666;
+    font-weight: 600;
+    border-bottom: 2px solid #e1e1e1;
+  }
+  
+  .events-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e1e1e1;
+    color: #333;
+  }
+  
+  .event-cell {
+    max-width: 300px;
+  }
+  
+  .event-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .event-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .event-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .event-category {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: #e3f2fd;
+    color: #0056b3;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  
+  .status-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .status-badge.pending {
+    background: #fff7e6;
+    color: #b45309;
+  }
+  
+  .status-badge.approved {
+    background: #e3fcef;
+    color: #0a8a3f;
+  }
+  
+  .status-badge.rejected {
+    background: #fde8e8;
+    color: #c81e1e;
+  }
+  
+  .feature-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #d4d4d4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .feature-btn.featured {
+    color: #ffc107;
+    animation: pulse 1s ease;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .actions-cell {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .action-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .action-btn.view {
+    background: #e3f2fd;
+    color: #0056b3;
+  }
+  
+  .action-btn.approve {
+    background: #e3fcef;
+    color: #0a8a3f;
+  }
+  
+  .action-btn.reject {
+    background: #fde8e8;
+    color: #c81e1e;
+  }
+  
+  .action-btn:hover {
+    transform: translateY(-2px);
+  }

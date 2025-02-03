@@ -1,0 +1,158 @@
+.event-details-modal {
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 2rem;
+  }
+  
+  .event-header {
+    margin: -2rem -2rem 2rem -2rem;
+    position: relative;
+  }
+  
+  .event-header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .event-title-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .event-title-section h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .event-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .detail-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .detail-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .detail-content h4 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+  }
+  
+  .detail-content p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .capacity-bar {
+    height: 8px;
+    background: #e1e1e1;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .capacity-fill {
+    height: 100%;
+    background: linear-gradient(45deg, #007bff, #00bcd4);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  .event-description,
+  .organizer-details {
+    margin-bottom: 2rem;
+  }
+  
+  .event-description h3,
+  .organizer-details h3 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .organizer-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .organizer-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .modal-footer {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .approval-actions {
+    display: flex;
+    gap: 1rem;
+    margin-right: auto;
+  }
+  
+  .btn-approve,
+  .btn-reject,
+  .btn-close {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .btn-approve {
+    background: #0a8a3f;
+    color: white;
+  }
+  
+  .btn-reject {
+    background: #c81e1e;
+    color: white;
+  }
+  
+  .btn-close {
+    background: #f8f9fa;
+    color: #666;
+  }
+  
+  .btn-approve:hover,
+  .btn-reject:hover {
+    transform: translateY(-2px);
+  }
